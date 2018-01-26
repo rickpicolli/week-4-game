@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Power of the Heroes Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+</head>
+<body>
+
+<header>
+	<h1>Power of Heroes!</h1>
+</header>
+
+<div class="container">
+	<!-- <div class=row>
+		<div class=col-md-8> -->
+	<p>You will be given a random number at the start of the game. This number is the power of your enemies</p>
+	<p>There are five heroes below. By clicking on a hero you will add a specific amount of points to the power of the heroes.</p>
+	<p>You win the game by matching the power of heroes to the enemies's power, but you lose the game if the heroes's power goes above of enemies's.</p>
+	<p>The value of each hero is hidden from you until you click on it.</p>
+	<p> Each time when the game starts, the game will change the values of each hero and the enemies's power</p>
+</div>
+</div>
+</div>
+
+<div class=enemy>
+
+<div class= pcPower>
+        <div class="result-panel">
+          <h3 class="result">Power of the Enemy</h3>
+        </div>
+          <hr>          
+        <div class="panel-body">
+            <span id="randomNumber"></span>
+        </div>
+</div>
+
+<div class= scores>
+  <h3>Wins:<span id="wins"></span></h3>
+  <br>
+  <h3>Losses:<span id="losses"></span> 
+  </div>
+</div>
+
+<div class="panel-body">
+
+  <div class="heroes">
+        <div id="flash">
+        	<img width="100px" height="100px" src="assets/images/img5.png">
+        </div>
+        	<div id="green">
+            <img width="100px" height="100px" src="assets/images/img1.png">
+        </div>
+        <div id="batman">
+           <img width="100px" height="100px" src="assets/images/img3.png">
+        </div>
+        <div id="wonder">
+           <img width="100px" height="100px" src="assets/images/img4.png">
+        </div>
+        <div id="superman">
+           <img width="100px" height="100px" src="assets/images/img2.png">
+        </div>
+  </div>
+        
+            <br><br>
+</div>
+
+<div class="power">
+  <p>Your total score: <br> <span id="strengthTotal">0</span></p>
+
+</div>
+
+
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
